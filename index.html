@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Phote Editing</title>
+</head>
+<body>
+    <h1>Joker Editing </h1>
+    <div class="phote">
+        <img src="https://i.pinimg.com/736x/5e/37/4c/5e374c811b9ca87258dccb8630afed8a.jpg" class="logo">
+        <div class="phote-2">
+            <img src="https://i.pinimg.com/736x/e0/bf/cd/e0bfcd3c8744b48f821039bd19434556.jpg" class="logo">
+        </div>
+    </div>
+<div class="loop cubes">
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+</div>
+
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img id="img">
+                <canvas id="canvaas"></canvas>
+            </div>
+           
+
+          <div class="upload">
+            <ion-icon name="add-outline"></ion-icon>
+            <label for="upload">
+                Upload</label>
+            <input type="file" id="upload">
+          </div>
+        </div>
+
+
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="controst">Controst</label>
+                    <input type="range" id="controst" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" id="sepia" min="0" max="200" value="0">
+                </li>
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" id="grayscale" min="0" max="1" value="0" step="0.1">
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" min="0" max="10" step="0.1" value="0">
+                </li>
+                <li>
+                    <label for="hue-rotate">Hue-Rotate</label>
+                    <input type="range" id="hue-rotate" min="0" max="350" value="0">
+                </li>
+                <li>
+                    <a download="ture" id="download">
+                        <ion-icon name="checkbox-outline"></ion-icon>Download</a>
+                    <span onclick=" resetValue();">
+                        <ion-icon name="refresh-outline"></ion-icon>Reset
+                    </span>
+                </li>
+            </ul>
+            <img src="https://i.pinimg.com/736x/35/6c/9d/356c9dc8480e09c039380cde15c3d530.jpg" class="joker">
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
